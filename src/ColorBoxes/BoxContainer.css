@@ -1,0 +1,6 @@
+.BoxContainer{
+    display: grid;
+    grid-template-columns: repeat(6,200px);
+    /* grid-gap: 30px;s */
+    margin: auto;
+}

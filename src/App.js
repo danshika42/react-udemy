@@ -19,9 +19,11 @@ import './App.css';
 // import ButtonList from './Events/ButtonList'
 // import NumberList from './Events/NumberList'
 // import Flipper from './CoinFlipper/Flipper'
-import BoxContainer from './ColorBoxes/BoxContainer'
+// import BoxContainer from './ColorBoxes/BoxContainer'
 // import Form from './Form/Form'
 // import Shopping from './Form/Shopping'
+// import ColorBoxForm from './Form/ColorBoxForm'
+import ColorBox from './Form/ColorBox'
 
 function App() {
   return (
@@ -35,9 +37,11 @@ function App() {
       {/* <Lottery/> */}
       {/* <Lottery title="Mini Daily" maxBalls={4} maxNum={10}/> */}
       {/* <Flipper/> */}
-      <BoxContainer/>
+      {/* <BoxContainer/> */}
       {/* <Form/> */}
       {/* <Shopping/> */}
+      {/* <ColorBoxForm/> */}
+      <ColorBox/>
     </div>
   );
 }
