@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Todoform from './TodoForm'
+// import Todoform from './TodoForm'
 
 class Todo extends Component {
     constructor(props) {
@@ -15,6 +15,16 @@ class Todo extends Component {
         this.handleEdit=this.handleEdit.bind(this);
         this.handleComplete=this.handleComplete.bind(this);
     }
+
+    // componentDidUpdate(prevProps,prevState){
+    //     console.log('In Todo componentDidUpdate')
+    //     console.log(prevProps.todo)
+    //     console.log(this.props.todo)
+    // }
+    componentWillUnmount(){
+        console.log('Component will unmount');
+    }
+
     handleComplete(){
         this.setState({
             isComplete:!this.state.isComplete

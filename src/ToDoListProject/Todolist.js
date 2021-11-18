@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Todo from './Todo'
 import Todoform from './TodoForm'
-import uuid from 'uuid/v4'
+// import uuid from 'uuid/v4'
 
 class Todolist extends Component {
     constructor(props) {
@@ -24,6 +24,11 @@ class Todolist extends Component {
             todo:this.state.todo.filter(todo=>todo.id!==key)
         })
     }
+    // componentDidUpdate(prevProps,prevState){
+    //     console.log('In componentDidUpdate');
+    //     console.log(prevState.todo)
+    //     console.log(this.state.todo)
+    // }
     edit(id,updatedTodo){
         const newTodo=this.state.todo.map(todon=>{
             if(todon.id===id){
