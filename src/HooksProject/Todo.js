@@ -9,7 +9,6 @@ import DeleteIcon from '@material-ui/icons/Delete'
 import EditIcon from '@material-ui/icons/Edit'
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
 import useForm from '../hooks_usestate/useForm'
-import useTodostate from '../hooks_usestate/useTodostate';
 
 function Todo(props) {
     const [newTodo,setUpdatedTodo,reset]=useForm(props.task);
@@ -40,11 +39,13 @@ function Todo(props) {
                         props.done(props.id);
                     }}
                 />
+               
                 <ListItemText style={{
                     textDecoration:props.completed?'line-through':'none'
                 }}>
                     {props.task}
                 </ListItemText>
+                
                 <ListItemSecondaryAction>
                     <IconButton aria-label='delete' 
                         onClick={()=>{

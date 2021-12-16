@@ -32,7 +32,6 @@ class Todolist extends Component {
     edit(id,updatedTodo){
         const newTodo=this.state.todo.map(todon=>{
             if(todon.id===id){
-
                 return {...todon,todo:updatedTodo};
             }
             return todon;

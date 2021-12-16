@@ -2,7 +2,7 @@ import uuid from 'uuid/v4'
 import useLocalstorageState from './useLocalstorageState'
 
 
-export default initialTodos=>{
+const useTodostate=(initialTodos)=>{
     const [todos,setTodos]=useLocalstorageState("todos",initialTodos);
     return {
         todos,
@@ -22,7 +22,6 @@ export default initialTodos=>{
         removeTodo:todoId=>{
             const updatedTodo=todos.filter(todo=>todo.id!==todoId);
             setTodos(updatedTodo);
-         
         },
         edit:(id,newTodo)=>{
             const updatedTodo=todos.map(todo=>{
@@ -37,6 +36,8 @@ export default initialTodos=>{
 
     }
 }
+
+export default useTodostate;
 
 
  

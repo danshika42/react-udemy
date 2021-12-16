@@ -115,12 +115,35 @@
 // export default App
 
 import React from 'react'
-import TodoApp from './HooksProject/TodoApp'
+// import TodoApp from './HooksProject/TodoApp'
+// import {TodoProvider} from './HooksProjectTodoContext/TodoContext'
+// import Navbar from './Context/Navbar'
+// import Minipallete from './JSS/Minipallete'
+// import Navbar from './Context/Navbar'
+// import NavbarHook from './Context/NavbarHook'
+// import Form from './Context/Form'
+// import FormHook from './Context/FormHook'
+// import PageContent from './Context/PageContent'
+// import {ThemeProvider} from './Contexts/ThemeContext'
+// import {LanguageProvider} from './Contexts/LanguageContext'
+import TodoApp from './TodoApp'
 import './App.css'
 
 function App(){
   return(
-    <TodoApp/>
+    <div>
+      <TodoApp/>
+    {/* <Minipallete/> */}
+    {/* <ThemeProvider>
+      <LanguageProvider>
+        <PageContent>
+          <NavbarHook/>
+          <FormHook/>
+        </PageContent>
+      </LanguageProvider>
+    </ThemeProvider> */}
+    
+    </div>
   )
 }
 
